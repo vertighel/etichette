@@ -1,0 +1,89 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>etichette memme</title>
+<style>
+body{text-align: center; font-family:"Helvetica";}
+h1, a{font-weight:100; color:steelblue; margin-top:30px}
+form{width:500px; margin: 0 auto}
+label{display:inline-block; width:200px; padding:3px; margin:3px; }
+input{width:200px; height:30px; text-align:center; padding:0; border: 2px solid steelblue; border-radius:5px}
+input:focus{border: 2px solid orange; box-shadow: 0px 0px 5px orange; outline: none}
+section a:hover, section a:focus{color: orange}
+svg{border: 1px solid gray; box-shadow: 1px 1px 6px gray;}
+</style>
+<body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+
+  <h1>sistema di etichettatura memm-o-matic</h1>
+  <section></section>
+  <figure></figure>
+
+  <script>
+// vettore di 4 valori
+var dati=["nome","cognome","testo1","testo2"]
+
+var fontsize=30;
+
+// margini, larghezza ed altezza dell'immagine svg (in pixel)
+var margin = {top: 30, right: 20, bottom: 30, left: 20},
+    width = 400 - margin.left - margin.right,
+    height = 200 - margin.top - margin.bottom;
+
+//////////// Creo il form /////////////////
+var form = d3.select("section").append("form")
+
+form.selectAll('label').data(dati).enter() // ad ogni etichetta che creerò ci attacco i dati
+  .append("label") // ci appendo un'etichetta per ogni elemento 
+    .attr("for",function(d){return d})
+    .text(function(d){return d}) // ognuna col testo preso dal vettore
+  .append("input") // ci appendo una tag di input 
+    .attr("type","text") // di tipo testo
+    .attr("id",function(d){return d}) // con l'id preso dal vettore
+    .attr("class",function(d){return d}) // con la classe presa dal vettore
+    .attr("placeholder",function(d){return d}) // idem per il segnaposto (che fantasia)
+
+form.append("br")
+form.append("a") // ci appendo un link per scaricare
+    .text("scarica") // e il suo testo
+    .attr("href","#") // per ora senza link
+
+//////////// Creo la svg /////////////////
+var svg = d3.select("figure").append("svg")
+    .attr("xmlns", "http://www.w3.org/2000/svg") // giusto per essere puntigliosi
+    .attr("width", width + margin.left + margin.right) // imposto larghezza
+    .attr("height", height + margin.top + margin.bottom) // e altezza
+  .append("g") // creo un gruppo e lo traslo del valore dei margini
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+//////////// Creo i nodi di testo vuoti /////////////////
+    svg.selectAll("text") // per ogni nodo di testo che creerò
+    .data(dati).enter() // ci attacco i dati
+    .append("text") // appendo un nodo di testo
+    .attr("class", function(d){return d}) // ognuno con la sua classe presa dal vettore
+    .attr("x",0) // posizione in x (in pixel) 
+    .attr("y",function(d,i){ return height/dati.length*i+fontsize}) // non è proprio perfetto come allineamento.. 
+    .attr({ // un altro modo per impostare gli attibuti, magari costanti, tutti assieme invece che uno per uno
+	"font-size": fontsize, // non lo faccio nel css perché sennò non vengono esportati 
+	"font-family": "Helvetica"
+    })
+
+//////////// Ci metto il testo dinamicamente /////////////////
+d3.selectAll("input").on("keyup",function(){ // ogni volta che schiaccio un tasto...
+    var cls=d3.select(this).attr("class") // mi segno la sua classe (class="cognome")
+    var val=d3.select(this).property("value") // mi segno il suo valore (amendolia)
+    d3.select("text."+cls).text(val) // imposto il testo al nodo di testo che ha la stessa clase 
+
+    // creo il nome del file della forma nome-cognome.svg
+    var nomecognome=d3.selectAll("text")[0][0].textContent+"-"+d3.selectAll("text")[0][1].textContent+".svg"    
+    d3.select("a")
+	.text("scarica come "+ nomecognome)
+        .attr("download", nomecognome) // ci attacco il nuovo attributo download e il nome del file
+})
+
+//////////// Creo il link per lo scaricamento /////////////////
+d3.select("section a").on("click", function(){ // seleziono la tag <a>, e al click...
+    d3.select(this) // ...prendo la tag e ci attacco (penso) il suo contenuto trasformato in bit
+        .attr("href", 'data:application/octet-stream;base64,' + btoa(d3.select("figure").html()))
+})
+
+</script>
