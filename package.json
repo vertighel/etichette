@@ -1,0 +1,26 @@
+{
+  "name": "etichette",
+  "version": "1.0.0",
+  "description": "Simple Form to add text elements to an svg image, inspired by a  [duopixel example](http://bl.ocks.org/duopixel/3831266). The number of the elements are defined by a simple text array. The text of the array elements will be used to set IDs and classes.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "d3": "^4.13.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gist.github.com/4965462.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gist.github.com/4965462"
+  },
+  "homepage": "https://gist.github.com/4965462"
+}
