@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Helium",
+        "fisico": 11,
+        "mente": 22,
+        "controllo": 33
+    },
+    {
+        "nome": "Moth",
+        "fisico": 44,
+        "mente": 55,
+        "controllo": 66
+    },
+    {
+        "nome": "Cobalt",
+        "fisico": 77,
+        "mente": 88,
+        "controllo": 99
+    },
+    {
+        "nome": "Test",
+        "fisico": 1,
+        "mente": 2,
+        "controllo": 3
+    }
+]

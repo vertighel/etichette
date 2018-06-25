@@ -1,0 +1,20 @@
+[
+    {
+        "data": "25\/6\/2018, 18:08:40",
+        "personaggio": "Cobalt",
+        "caratteristica": "controllo",
+        "base": 99,
+        "bon\/mal": 2,
+        "dado": 5,
+        "totale": 106
+    },
+    {
+        "data": "25\/6\/2018, 18:08:42",
+        "personaggio": "Test",
+        "caratteristica": "fisico",
+        "base": 1,
+        "bon\/mal": 2,
+        "dado": 7,
+        "totale": 10
+    }
+]
