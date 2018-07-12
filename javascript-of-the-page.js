@@ -227,8 +227,7 @@ function tabulate(data, columns){
         .merge(cells)
         .text(function(d,i){return d.value })
 
-    return table;
-    
+    return table;    
 }
 
 

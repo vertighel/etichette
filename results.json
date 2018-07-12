@@ -4390,5 +4390,32 @@
         "bon\/mal": 0,
         "dado": 17,
         "totale": 28
+    },
+    {
+        "data": "12\/7\/2018, 16:30:59",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 20,
+        "totale": 53
+    },
+    {
+        "data": "12\/7\/2018, 16:41:19",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 15,
+        "totale": 26
+    },
+    {
+        "data": "12\/7\/2018, 16:41:20",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 40
     }
 ]
