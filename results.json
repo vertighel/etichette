@@ -3409,5 +3409,986 @@
         "bon\/mal": 0,
         "dado": 7,
         "totale": 29
+    },
+    {
+        "data": "12\/7\/2018, 13:53:08",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 15,
+        "totale": 26
+    },
+    {
+        "data": "12\/7\/2018, 13:53:09",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 10,
+        "totale": 32
+    },
+    {
+        "data": "12\/7\/2018, 13:53:11",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 7,
+        "totale": 40
+    },
+    {
+        "data": "12\/7\/2018, 13:53:11",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 19,
+        "totale": 41
+    },
+    {
+        "data": "12\/7\/2018, 13:53:14",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 13,
+        "totale": 24
+    },
+    {
+        "data": "12\/7\/2018, 13:53:14",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 15,
+        "totale": 26
+    },
+    {
+        "data": "12\/7\/2018, 13:53:15",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 20,
+        "totale": 31
+    },
+    {
+        "data": "12\/7\/2018, 13:53:15",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 4,
+        "totale": 15
+    },
+    {
+        "data": "12\/7\/2018, 13:53:15",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 6,
+        "totale": 17
+    },
+    {
+        "data": "12\/7\/2018, 13:53:15",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 29
+    },
+    {
+        "data": "12\/7\/2018, 13:54:05",
+        "personaggio": "Moth",
+        "caratteristica": "fisico",
+        "base": 44,
+        "bon\/mal": -2,
+        "dado": 18,
+        "totale": 60
+    },
+    {
+        "data": "12\/7\/2018, 13:54:05",
+        "personaggio": "Moth",
+        "caratteristica": "fisico",
+        "base": 44,
+        "bon\/mal": -2,
+        "dado": 13,
+        "totale": 55
+    },
+    {
+        "data": "12\/7\/2018, 13:54:05",
+        "personaggio": "Moth",
+        "caratteristica": "fisico",
+        "base": 44,
+        "bon\/mal": -2,
+        "dado": 14,
+        "totale": 56
+    },
+    {
+        "data": "12\/7\/2018, 13:54:05",
+        "personaggio": "Moth",
+        "caratteristica": "fisico",
+        "base": 44,
+        "bon\/mal": -2,
+        "dado": 17,
+        "totale": 59
+    },
+    {
+        "data": "12\/7\/2018, 13:59:03",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 16,
+        "totale": 49
+    },
+    {
+        "data": "12\/7\/2018, 14:07:17",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 5,
+        "totale": 16
+    },
+    {
+        "data": "12\/7\/2018, 14:08:01",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 29
+    },
+    {
+        "data": "12\/7\/2018, 14:08:12",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 2,
+        "totale": 13
+    },
+    {
+        "data": "12\/7\/2018, 14:08:37",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 5,
+        "totale": 27
+    },
+    {
+        "data": "12\/7\/2018, 14:09:00",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 20,
+        "totale": 42
+    },
+    {
+        "data": "12\/7\/2018, 14:09:10",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 4,
+        "totale": 15
+    },
+    {
+        "data": "12\/7\/2018, 14:10:04",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 29
+    },
+    {
+        "data": "12\/7\/2018, 14:10:25",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 19,
+        "totale": 30
+    },
+    {
+        "data": "12\/7\/2018, 14:10:52",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 4,
+        "totale": 15
+    },
+    {
+        "data": "12\/7\/2018, 14:13:09",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 19,
+        "totale": 30
+    },
+    {
+        "data": "12\/7\/2018, 14:13:34",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 11,
+        "totale": 22
+    },
+    {
+        "data": "12\/7\/2018, 14:13:36",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 29
+    },
+    {
+        "data": "12\/7\/2018, 14:14:28",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 14,
+        "totale": 47
+    },
+    {
+        "data": "12\/7\/2018, 14:14:50",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 17,
+        "totale": 50
+    },
+    {
+        "data": "12\/7\/2018, 14:14:54",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 8,
+        "totale": 41
+    },
+    {
+        "data": "12\/7\/2018, 14:15:02",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 10,
+        "totale": 21
+    },
+    {
+        "data": "12\/7\/2018, 14:15:14",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 10,
+        "totale": 43
+    },
+    {
+        "data": "12\/7\/2018, 14:15:26",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 7,
+        "totale": 40
+    },
+    {
+        "data": "12\/7\/2018, 14:15:44",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 9,
+        "totale": 42
+    },
+    {
+        "data": "12\/7\/2018, 14:16:16",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 17,
+        "totale": 50
+    },
+    {
+        "data": "12\/7\/2018, 14:16:31",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 6,
+        "totale": 39
+    },
+    {
+        "data": "12\/7\/2018, 14:17:01",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 10,
+        "totale": 21
+    },
+    {
+        "data": "12\/7\/2018, 14:18:10",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 40
+    },
+    {
+        "data": "12\/7\/2018, 14:18:23",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 13,
+        "totale": 24
+    },
+    {
+        "data": "12\/7\/2018, 14:18:31",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 2,
+        "totale": 13
+    },
+    {
+        "data": "12\/7\/2018, 14:18:43",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 8,
+        "totale": 19
+    },
+    {
+        "data": "12\/7\/2018, 14:20:44",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 11,
+        "totale": 22
+    },
+    {
+        "data": "12\/7\/2018, 14:21:05",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 14,
+        "totale": 47
+    },
+    {
+        "data": "12\/7\/2018, 14:22:04",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 40
+    },
+    {
+        "data": "12\/7\/2018, 14:22:27",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 4,
+        "totale": 37
+    },
+    {
+        "data": "12\/7\/2018, 14:22:48",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 13,
+        "totale": 35
+    },
+    {
+        "data": "12\/7\/2018, 14:24:33",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 29
+    },
+    {
+        "data": "12\/7\/2018, 14:26:09",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 8,
+        "totale": 30
+    },
+    {
+        "data": "12\/7\/2018, 14:27:32",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 7,
+        "totale": 18
+    },
+    {
+        "data": "12\/7\/2018, 14:29:57",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 6,
+        "totale": 17
+    },
+    {
+        "data": "12\/7\/2018, 14:34:49",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 40
+    },
+    {
+        "data": "12\/7\/2018, 14:36:23",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 2,
+        "totale": 24
+    },
+    {
+        "data": "12\/7\/2018, 14:36:41",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 16,
+        "totale": 38
+    },
+    {
+        "data": "12\/7\/2018, 14:37:08",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 17,
+        "totale": 28
+    },
+    {
+        "data": "12\/7\/2018, 14:37:27",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 11,
+        "totale": 44
+    },
+    {
+        "data": "12\/7\/2018, 14:37:29",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 14,
+        "totale": 47
+    },
+    {
+        "data": "12\/7\/2018, 14:38:02",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 12,
+        "totale": 45
+    },
+    {
+        "data": "12\/7\/2018, 14:38:03",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 11,
+        "totale": 44
+    },
+    {
+        "data": "12\/7\/2018, 14:38:11",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 1,
+        "totale": 34
+    },
+    {
+        "data": "12\/7\/2018, 14:38:23",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 20,
+        "totale": 31
+    },
+    {
+        "data": "12\/7\/2018, 14:39:00",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 1,
+        "totale": 23
+    },
+    {
+        "data": "12\/7\/2018, 14:39:02",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 40
+    },
+    {
+        "data": "12\/7\/2018, 14:39:47",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 14,
+        "totale": 25
+    },
+    {
+        "data": "12\/7\/2018, 14:40:31",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 4,
+        "totale": 15
+    },
+    {
+        "data": "12\/7\/2018, 14:40:37",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 6,
+        "totale": 39
+    },
+    {
+        "data": "12\/7\/2018, 14:40:49",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 10,
+        "totale": 43
+    },
+    {
+        "data": "12\/7\/2018, 14:41:47",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 16,
+        "totale": 38
+    },
+    {
+        "data": "12\/7\/2018, 14:42:01",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 4,
+        "totale": 15
+    },
+    {
+        "data": "12\/7\/2018, 14:42:31",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 16,
+        "totale": 27
+    },
+    {
+        "data": "12\/7\/2018, 14:42:37",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 12,
+        "totale": 23
+    },
+    {
+        "data": "12\/7\/2018, 14:42:43",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 10,
+        "totale": 43
+    },
+    {
+        "data": "12\/7\/2018, 14:42:44",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 15,
+        "totale": 48
+    },
+    {
+        "data": "12\/7\/2018, 14:42:44",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 14,
+        "totale": 36
+    },
+    {
+        "data": "12\/7\/2018, 14:43:17",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 8,
+        "totale": 41
+    },
+    {
+        "data": "12\/7\/2018, 14:43:19",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 9,
+        "totale": 42
+    },
+    {
+        "data": "12\/7\/2018, 14:43:19",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 51
+    },
+    {
+        "data": "12\/7\/2018, 14:43:30",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 13,
+        "totale": 24
+    },
+    {
+        "data": "12\/7\/2018, 14:43:36",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 12,
+        "totale": 23
+    },
+    {
+        "data": "12\/7\/2018, 14:43:49",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 9,
+        "totale": 20
+    },
+    {
+        "data": "12\/7\/2018, 14:44:04",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 7,
+        "totale": 18
+    },
+    {
+        "data": "12\/7\/2018, 14:44:15",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 9,
+        "totale": 20
+    },
+    {
+        "data": "12\/7\/2018, 14:44:16",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 15,
+        "totale": 26
+    },
+    {
+        "data": "12\/7\/2018, 14:44:17",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 5,
+        "totale": 27
+    },
+    {
+        "data": "12\/7\/2018, 14:44:18",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 2,
+        "totale": 24
+    },
+    {
+        "data": "12\/7\/2018, 14:46:32",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 13,
+        "totale": 24
+    },
+    {
+        "data": "12\/7\/2018, 14:46:43",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 8,
+        "totale": 41
+    },
+    {
+        "data": "12\/7\/2018, 14:46:45",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 17,
+        "totale": 50
+    },
+    {
+        "data": "12\/7\/2018, 14:46:51",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 16,
+        "totale": 27
+    },
+    {
+        "data": "12\/7\/2018, 14:46:52",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 3,
+        "totale": 14
+    },
+    {
+        "data": "12\/7\/2018, 14:47:00",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 11,
+        "totale": 22
+    },
+    {
+        "data": "12\/7\/2018, 14:47:00",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 8,
+        "totale": 19
+    },
+    {
+        "data": "12\/7\/2018, 14:47:11",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 13,
+        "totale": 24
+    },
+    {
+        "data": "12\/7\/2018, 14:47:26",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 14,
+        "totale": 25
+    },
+    {
+        "data": "12\/7\/2018, 14:47:59",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 14,
+        "totale": 25
+    },
+    {
+        "data": "12\/7\/2018, 14:48:58",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 8,
+        "totale": 19
+    },
+    {
+        "data": "12\/7\/2018, 14:49:09",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 9,
+        "totale": 20
+    },
+    {
+        "data": "12\/7\/2018, 14:49:19",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 13,
+        "totale": 24
+    },
+    {
+        "data": "12\/7\/2018, 14:49:23",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 7,
+        "totale": 29
+    },
+    {
+        "data": "12\/7\/2018, 14:49:39",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 4,
+        "totale": 37
+    },
+    {
+        "data": "12\/7\/2018, 14:49:48",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 40
+    },
+    {
+        "data": "12\/7\/2018, 14:50:03",
+        "personaggio": "Helium",
+        "caratteristica": "mente",
+        "base": 22,
+        "bon\/mal": 0,
+        "dado": 1,
+        "totale": 23
+    },
+    {
+        "data": "12\/7\/2018, 14:50:12",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 5,
+        "totale": 16
+    },
+    {
+        "data": "12\/7\/2018, 14:50:37",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 10,
+        "totale": 21
+    },
+    {
+        "data": "12\/7\/2018, 14:51:34",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 3,
+        "totale": 14
+    },
+    {
+        "data": "12\/7\/2018, 14:51:41",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 10,
+        "totale": 43
+    },
+    {
+        "data": "12\/7\/2018, 14:52:03",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 7,
+        "totale": 18
+    },
+    {
+        "data": "12\/7\/2018, 14:52:21",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 18,
+        "totale": 29
+    },
+    {
+        "data": "12\/7\/2018, 14:52:53",
+        "personaggio": "Helium",
+        "caratteristica": "controllo",
+        "base": 33,
+        "bon\/mal": 0,
+        "dado": 8,
+        "totale": 41
+    },
+    {
+        "data": "12\/7\/2018, 14:53:19",
+        "personaggio": "Helium",
+        "caratteristica": "fisico",
+        "base": 11,
+        "bon\/mal": 0,
+        "dado": 17,
+        "totale": 28
     }
 ]

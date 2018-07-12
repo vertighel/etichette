@@ -154,6 +154,16 @@ function onclick() {
         .fail(function(e){console.log(e.responseText)});
     
     makesvg(logjson)
+
+    $.ajax({
+        type: "POST",
+        url: "./writesvg.php",
+        data: {image: d3.select("figure").html(), date:new Date().toISOString()},
+//        async: false,
+        dataType: "json",
+    })
+        .done(function(d){makesnippet(d)})
+        .fail(function(e){console.log(e.responseText)});
     
 };
 
@@ -249,21 +259,32 @@ function makesvg(logjson){
         .text(function(d,i){return chiavi[i]+": "+d})
         .attr("font-size", fontsize) // non lo faccio nel css perché sennò non vengono esportati
         .attr("font-family", "Helvetica")
-    
-    // creo il nome del file della forma nome-cognome.svg
-    var nomecognome=valori[0].replace(/[\/,: ]/g,"")+"-"+valori[1]+".svg"
-
-    var a = d3.select("a").data([0])
-
-    a // Only Update
-    
-    a.exit().remove() // Exit
-    a.enter().append("a") // Enter
-        .merge(a) // ENTER + UPDATE
-        .html("scarica:<br>"+ nomecognome)
-        .attr("download", nomecognome) // ci attacco il nuovo attributo download e il nome del file
-        .attr("href", 'data:application/octet-stream;base64,' + btoa(d3.select("figure").html()))
-    
+        
     return testi
+
+    // // creo il nome del file della forma nome-cognome.svg
+    // var nomecognome=valori[0].replace(/[\/,: ]/g,"")+"-"+valori[1]+".svg"
+
+    // var a = d3.select("#download").data([0])
+
+    // a // Only Update
     
+    // a.exit().remove() // Exit
+    // a.enter().append("a") // Enter
+    //     .merge(a) // ENTER + UPDATE
+    //     .html("scarica:<br>"+ nomecognome)
+    //     .attr("download", nomecognome) // ci attacco il nuovo attributo download e il nome del file
+    //     .attr("href", 'data:application/octet-stream;base64,' + btoa(d3.select("figure").html()))
+
+//    makesnippet();
+
+}
+
+
+function makesnippet(link){
+//    var sito = './'
+    var sito = 'http://itselemental.altervista.org/lancio/'
+    var snippet = '<img src="'+sito+link+'" >'
+//    console.log(snippet)
+    $("code").text(snippet)
 }
