@@ -5,25 +5,7 @@
 //         fisico: 11,
 //         mente: 22,
 //         controllo: 33,
-//     },
-//     {
-//         nome: "Moth",
-//         fisico: 44,
-//         mente: 55,
-//         controllo: 66,
-//     },
-//     {
-//         nome: "Cobalt",
-//         fisico: 77,
-//         mente: 88,
-//         controllo: 99,
-//     },
-//     {
-//         nome: "Test",
-//         fisico: 1,
-//         mente: 2,
-//         controllo: 3,
-//     },
+//     }
 // ]
 
 /// Carico il json dei personaggi. Fra qualche anno sarà più semplice farlo
@@ -97,6 +79,32 @@ onchange() /// chiamo almeno una volta la funzione per ottenere una lista inizia
 
 getTable();/// chiamo almeno una volta per ottenere la tabella
 
+    
+//////////// Creo la svg /////////////////
+var svg = d3.select("figure").append("svg")
+
+// margini, larghezza ed altezza dell'immagine svg (in pixel)
+var margin = {top: 30, right: 20, bottom: 30, left: 20},
+    width = 200 - margin.left - margin.right,
+    height = 200 - margin.top - margin.bottom;
+
+svg.attr("xmlns", "http://www.w3.org/2000/svg") // giusto per essere puntigliosi
+    .attr("width", width + margin.left + margin.right) // imposto larghezza
+    .attr("height", height + margin.top + margin.bottom) // e altezza
+        .style("border", "1px solid black") // non lo faccio nel css perché sennò non vengono esportati
+        .style("box-shadow", "4px 4px gray") // non lo faccio nel css perché sennò non vengono esportati
+      .append("g") // creo un gruppo e lo traslo del valore dei margini
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+
+svg
+    .append("text")
+    .text("elemental")
+    .attr("x", -height-50) // non lo faccio nel css perché sennò non vengono esportati
+    .attr("y", width+30) // non lo faccio nel css perché sennò non vengono esportati
+    .attr("fill", "gray") // non lo faccio nel css perché sennò non vengono esportati
+    .attr("transform","rotate(-90)")
+    .style("font-size", "30px") // non lo faccio nel css perché sennò non vengono esportati
+
 
 /// ogni volta che un personaggio viene selezionato, mostra le sue caratteristiche
 function onchange() {
@@ -145,6 +153,8 @@ function onclick() {
         .done(getTable())
         .fail(function(e){console.log(e.responseText)});
     
+    makesvg(logjson)
+    
 };
 
 /// Tira un dado da un valore minimo ad uno massimo
@@ -155,9 +165,10 @@ function getRandomInt(min, max) {
 
 function getTable(){
 
+    var nrows = 17 // numero delle righe della tabella
     /// chiamo il file php che legge il json
         $.getJSON("./readfile.php", function(res) {
-            var last = res.length > 10 ? res.slice(-10) : res ; /// se sono meno di 10 li metto tutti, sennò taglio gli ultimi 10
+            var last = res.length > nrows ? res.slice(-nrows) : res ; /// se sono meno di 10 li metto tutti, sennò taglio gli ultimi 10
             tabulate(last.reverse(), d3.keys(last[0])) // uso le chiavi della prima riga come intestazione
         })
 
@@ -207,5 +218,52 @@ function tabulate(data, columns){
         .text(function(d,i){return d.value })
 
     return table;
+    
+}
+
+
+function makesvg(logjson){
+    
+    var chiavi=d3.keys(logjson) 
+    var valori=d3.values(logjson) 
+    
+    var fontsize=15;
+
+    var svg = d3.select("svg g")
+
+    //////////// Creo i nodi di testo vuoti /////////////////
+    var testi=svg.selectAll("text") // per ogni nodo di testo che creerò
+        .data(valori) // ci attacco i dati
+
+    testi
+        .attr("class", function(d,i){return chiavi[i]}) // ognuno con la sua classe presa dal vettore
+//        .text(function(d,i){return chiavi[i]+": "+d})
+
+    testi.exit().remove()
+
+    testi.enter()
+          .append("text") // appendo un nodo di testo
+        .attr("x",0) // posizione in x (in pixel)
+        .attr("y",function(d,i){ return height/valori.length*i+fontsize}) // non è proprio perfetto come allineamento..
+        .merge(testi) // ENTER + UPDATE (d3 muori maledetto bastardo)
+        .text(function(d,i){return chiavi[i]+": "+d})
+        .attr("font-size", fontsize) // non lo faccio nel css perché sennò non vengono esportati
+        .attr("font-family", "Helvetica")
+    
+    // creo il nome del file della forma nome-cognome.svg
+    var nomecognome=valori[0].replace(/[\/,: ]/g,"")+"-"+valori[1]+".svg"
+
+    var a = d3.select("a").data([0])
+
+    a // Only Update
+    
+    a.exit().remove() // Exit
+    a.enter().append("a") // Enter
+        .merge(a) // ENTER + UPDATE
+        .html("scarica:<br>"+ nomecognome)
+        .attr("download", nomecognome) // ci attacco il nuovo attributo download e il nome del file
+        .attr("href", 'data:application/octet-stream;base64,' + btoa(d3.select("figure").html()))
+    
+    return testi
     
 }
