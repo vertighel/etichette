@@ -248,9 +248,10 @@ function tabulate(data, columns, link){
 }
 
 function makesvg(logjson){
-    
+
+    delete logjson.snippet /// I am not interested in the filename in the svg
     var chiavi=d3.keys(logjson) 
-    var valori=d3.values(logjson) 
+    var valori=d3.values(logjson)
     
     var fontsize=15;
 
