@@ -1,4 +1,7 @@
 
+//    const sito = './'
+const sito = 'http://itselemental.altervista.org/lancio/'
+
 // var personaggi=[
 //     {
 //         nome: "Helium",
@@ -133,14 +136,19 @@ function onclick() {
     d3.select('var')
         .text(base+" "+ ((boma<0?"":"+")+boma) +" +"+dado+" = "+ tot ) /// scrive il risultato
 
+    var date = new Date();
+
+    var filename = "svg/"+date.toISOString()+".svg"
+    
     var logjson = {
-        data: new Date().toLocaleString('it-IT'),
+        data: date.toLocaleString('it-IT'),
         personaggio: personaggi[selezionato].nome,
         caratteristica: caratteristica.key,
         base: base,
         "bon/mal": boma,
         dado: dado,
-        totale: tot
+        totale: tot,
+        snippet: filename
     }
 
     $.ajax({
@@ -158,11 +166,11 @@ function onclick() {
     $.ajax({
         type: "POST",
         url: "./writesvg.php",
-        data: {image: d3.select("figure").html(), date:new Date().toISOString()},
+        data: {image: d3.select("figure").html(), filename:filename},
 //        async: false,
         dataType: "json",
     })
-        .done(function(d){makesnippet(d)})
+        .done(function(d){makesnippet(sito,filename)})
         .fail(function(e){console.log(e.responseText)});
     
 };
@@ -176,17 +184,17 @@ function getRandomInt(min, max) {
 function getTable(){
 
     var nrows = 17 // numero delle righe della tabella
-    /// chiamo il file php che legge il json
-        $.getJSON("./readfile.php", function(res) {
-            var last = res.length > nrows ? res.slice(-nrows) : res ; /// se sono meno di 10 li metto tutti, sennò taglio gli ultimi 10
-            tabulate(last.reverse(), d3.keys(last[0])) // uso le chiavi della prima riga come intestazione
+   
+        $.getJSON("./readfile.php", function(res) {  /// chiamo il file php che legge il json
+            var last = res.length > nrows ? res.slice(-nrows) : res ; /// se sono meno di 17 li metto tutti, sennò taglio gli ultimi 10
+            tabulate(last.reverse(), d3.keys(last[0]), "snippet") /// uso le chiavi della prima riga come intestazione
         })
 
 }
 
-
 /// Creo la tabella. D3 devi morire
-function tabulate(data, columns){
+function tabulate(data, columns, link){
+
     var table = d3.select('table')
     var thead = d3.select('thead')
     var tbody = d3.select('tbody');
@@ -203,11 +211,13 @@ function tabulate(data, columns){
 
     var rows =tbody.selectAll('tr').data(data)
     
-    rows.attr('data-row', function(d,i){return i});
+//    rows
     rows.exit().remove()
     rows.enter()
         .append('tr')
         .merge(rows)
+        .attr('data-row', function(d,i){return i })
+        .attr('href',function(d){return d.snippet })
 
     var cells = tbody.selectAll('tr')
         .data(data)
@@ -218,18 +228,24 @@ function tabulate(data, columns){
             });
         })
 
-    cells
-         .attr('data-col',function(d,i){return i })
-         .attr('data-key',function(d,i){return d.value });
+//    cells
     cells.exit().remove()
     cells.enter()
         .append("td")
         .merge(cells)
+        .attr('data-col',function(d,i){return i })
+        .attr('data-key',function(d,i){return d.column })
         .text(function(d,i){return d.value })
-
+        .filter(function(d,i) { return d.column===link })
+        .text("")
+        .append("a")
+        .attr("href", function(d,i) {
+            return d.value
+        })
+        .text( " link" );
+    
     return table;    
 }
-
 
 function makesvg(logjson){
     
@@ -246,7 +262,6 @@ function makesvg(logjson){
 
     testi
         .attr("class", function(d,i){return chiavi[i]}) // ognuno con la sua classe presa dal vettore
-//        .text(function(d,i){return chiavi[i]+": "+d})
 
     testi.exit().remove()
 
@@ -258,32 +273,11 @@ function makesvg(logjson){
         .text(function(d,i){return chiavi[i]+": "+d})
         .attr("font-size", fontsize) // non lo faccio nel css perché sennò non vengono esportati
         .attr("font-family", "Helvetica")
-        
-    return testi
-
-    // // creo il nome del file della forma nome-cognome.svg
-    // var nomecognome=valori[0].replace(/[\/,: ]/g,"")+"-"+valori[1]+".svg"
-
-    // var a = d3.select("#download").data([0])
-
-    // a // Only Update
-    
-    // a.exit().remove() // Exit
-    // a.enter().append("a") // Enter
-    //     .merge(a) // ENTER + UPDATE
-    //     .html("scarica:<br>"+ nomecognome)
-    //     .attr("download", nomecognome) // ci attacco il nuovo attributo download e il nome del file
-    //     .attr("href", 'data:application/octet-stream;base64,' + btoa(d3.select("figure").html()))
-
-//    makesnippet();
 
 }
 
-
-function makesnippet(link){
-//    var sito = './'
-    var sito = 'http://itselemental.altervista.org/lancio/'
-    var snippet = '<img src="'+sito+link+'" >'
+function makesnippet(sito,filename){
+    var snippet = '<img src="'+sito+filename+'" >'
 //    console.log(snippet)
     $("code").text(snippet)
 }
