@@ -255,6 +255,8 @@ function makesvg(logjson){
     
     var fontsize=15;
 
+    d3.select("svg").attr("fill","white")
+    
     var svg = d3.select("svg g")
 
     //////////// Creo i nodi di testo vuoti /////////////////
@@ -274,7 +276,7 @@ function makesvg(logjson){
         .text(function(d,i){return chiavi[i]+": "+d})
         .attr("font-size", fontsize) // non lo faccio nel css perché sennò non vengono esportati
         .attr("font-family", "Helvetica")
-
+        .attr("fill","black")
 }
 
 function makesnippet(sito,filename){
